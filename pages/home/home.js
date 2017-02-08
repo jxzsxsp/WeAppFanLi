@@ -1,14 +1,38 @@
 Page({
     data: {
         imgUrls: [
-            'http://l0.51fanli.net/event/attach/image/2017/02/589853ee7036b.jpg',
-            'http://l1.51fanli.net/event/attach/image/2017/02/58983d7c3e6a3.jpg',
-            'http://l3.51fanli.net/event/attach/image/2017/01/588464bc6e3f8.jpg',
-            'http://l4.51fanli.net/event/attach/image/2017/02/58982af5b97a5.jpg',
-            'http://l2.51fanli.net/event/attach/image/2017/02/58982322208e8.jpg',
-            'http://l3.51fanli.net/event/attach/image/2017/02/5898324aaf953.jpg',
-            'http://l3.51fanli.net/event/attach/image/2017/02/5895ab2c05a95.jpg',
-            'http://l2.51fanli.net/event/attach/image/2017/01/58846d3d421a0.jpg'
+            {
+                img: "http://l0.51fanli.net/event/attach/image/2017/02/589853ee7036b.jpg",
+                tap: "gotoBanner1"
+            },
+            {
+                img: "http://l1.51fanli.net/event/attach/image/2017/02/58983d7c3e6a3.jpg",
+                tap: "gotoBanner1"
+            },
+            {
+                img: "http://l3.51fanli.net/event/attach/image/2017/01/588464bc6e3f8.jpg",
+                tap: "gotoBanner1"
+            },
+            {
+                img: "http://l4.51fanli.net/event/attach/image/2017/02/58982af5b97a5.jpg",
+                tap: "gotoBanner1"
+            },
+            {
+                img: "http://l2.51fanli.net/event/attach/image/2017/02/58982322208e8.jpg",
+                tap: "gotoBanner1"
+            },
+            {
+                img: "http://l3.51fanli.net/event/attach/image/2017/02/5898324aaf953.jpg",
+                tap: "gotoBanner1"
+            },
+            {
+                img: "http://l3.51fanli.net/event/attach/image/2017/02/5895ab2c05a95.jpg",
+                tap: "gotoBanner1"
+            },
+            {
+                img: "http://l2.51fanli.net/event/attach/image/2017/01/58846d3d421a0.jpg",
+                tap: "gotoBanner1"
+            }
         ],
         indicatorDots: true,
         autoplay: true,
@@ -119,5 +143,22 @@ Page({
                 title: "更多"
             }
         ]
+    },
+    gotoBanner1: function () {
+        wx.navigateTo({
+          url: 'banner/banner1/banner1',
+          success: function(res){
+            // success
+            console.log("success")
+          },
+          fail: function() {
+            // fail
+            console.log("fail")
+          },
+          complete: function() {
+            // complete
+            console.log("complete")
+          }
+        })
     }
 })

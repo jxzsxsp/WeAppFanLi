@@ -1,6 +1,7 @@
 {
     "pages": [
         "pages/home/home",
+        "pages/home/banner/banner1/banner1",
         "pages/shop/shop",
         "pages/fanli/fanli",
         "pages/mine/mine"
