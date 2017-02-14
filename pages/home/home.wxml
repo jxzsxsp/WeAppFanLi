@@ -17,13 +17,18 @@
     </block>
   </view>
 
+  <!--上下隐藏按钮-->
+  <view class="image-hidden-view {{showCommon?'hide':''}}" bindtap="showCommon">
+    <image class="image-hidden-btn" src="/images/entry_view_down_btn_noanim.png"></image>
+  </view>
+
   <!--分隔线-->
-  <view>
+  <view class="{{showCommon?'':'hide'}}">
     <image class="image-line" src="/images/orange_entry_view_devider.png"></image>
   </view>
 
   <!--隐藏的商家推荐-->
-  <view class="common-container">
+  <view class="common-container {{showCommon?'':'hide'}}">
     <block wx:for="{{iconList}}" wx:key="hotIcon">
       <view class="item-container" bindtap="{{item.tap}}">
         <image class="item-image" src="{{item.img}}"></image>
@@ -33,7 +38,7 @@
   </view>
 
   <!--上下隐藏按钮-->
-  <view class="image-hidden-view">
+  <view class="image-hidden-view {{showCommon?'':'hide'}}" bindtap="hideCommon">
     <image class="image-hidden-btn" src="/images/entry_view_up_btn_noanim.png"></image>
   </view>
 </scroll-view>

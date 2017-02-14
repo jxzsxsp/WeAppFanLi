@@ -1,5 +1,6 @@
 Page({
     data: {
+        showCommon: false,
         imgUrls: [
             {
                 img: "http://l0.51fanli.net/event/attach/image/2017/02/589853ee7036b.jpg",
@@ -215,6 +216,18 @@ Page({
             complete: function () {
                 // complete
             }
+        })
+    },
+    hideCommon: function () {
+        var that = this;
+        that.setData({
+            showCommon: false
+        })
+    },
+    showCommon: function () {
+        var that = this;
+        that.setData({
+            showCommon: true
         })
     }
 })
