@@ -10,7 +10,7 @@
   <!--热门商家推荐-->
   <view class="hot-container">
     <block wx:for="{{hotIconList}}" wx:key="hotIcon">
-      <view class="item-container">
+      <view class="item-container" bindtap="{{item.tap}}">
         <image class="item-image" src="{{item.img}}"></image>
         <text class="item-text">{{item.title}}</text>
       </view>
@@ -19,13 +19,21 @@
 
   <!--分隔线-->
   <view>
+    <image class="image-line" src="/images/orange_entry_view_devider.png"></image>
   </view>
 
   <!--隐藏的商家推荐-->
-  <view>
+  <view class="common-container">
+    <block wx:for="{{iconList}}" wx:key="hotIcon">
+      <view class="item-container" bindtap="{{item.tap}}">
+        <image class="item-image" src="{{item.img}}"></image>
+        <text class="item-text">{{item.title}}</text>
+      </view>
+    </block>
   </view>
 
   <!--上下隐藏按钮-->
-  <view>
+  <view class="image-hidden-view">
+    <image class="image-hidden-btn" src="/images/entry_view_up_btn_noanim.png"></image>
   </view>
 </scroll-view>

@@ -2,6 +2,7 @@
     "pages": [
         "pages/home/home",
         "pages/home/banner/banner1/banner1",
+        "pages/home/mobile/pay",
         "pages/shop/shop",
         "pages/fanli/fanli",
         "pages/mine/mine"
@@ -13,33 +14,33 @@
         "backgroundColor": "#fbf9fe"
     },
     "tabBar": {
-        "color": "#dddddd",
-        "selectedColor": "#3cc51f",
+        "color": "#666666",
+        "selectedColor": "#43b149",
         "borderStyle": "black",
         "backgroundColor": "#ffffff",
         "list": [
             {
                 "pagePath": "pages/home/home",
-                "iconPath": "images/icon/tab/icon_component.png",
-                "selectedIconPath": "images/icon/tab/icon_component_HL.png",
+                "iconPath": "images/icon/tab/v5_8_icon_index_default_1.png",
+                "selectedIconPath": "images/icon/tab/v5_8_icon_index_selected_1.png",
                 "text": "首页"
             },
             {
                 "pagePath": "pages/shop/shop",
-                "iconPath": "images/icon/tab/icon_component.png",
-                "selectedIconPath": "images/icon/tab/icon_component_HL.png",
+                "iconPath": "images/icon/tab/v5_8_icon_shop_default.png",
+                "selectedIconPath": "images/icon/tab/v5_8_icon_shop_selected.png",
                 "text": "商城"
             },
             {
                 "pagePath": "pages/fanli/fanli",
-                "iconPath": "images/icon/tab/icon_component.png",
-                "selectedIconPath": "images/icon/tab/icon_component_HL.png",
+                "iconPath": "images/icon/tab/v5_8_icon_life_default.png",
+                "selectedIconPath": "images/icon/tab/v5_8_icon_life_selected.png",
                 "text": "返利"
             },
             {
                 "pagePath": "pages/mine/mine",
-                "iconPath": "images/icon/tab/icon_component.png",
-                "selectedIconPath": "images/icon/tab/icon_component_HL.png",
+                "iconPath": "images/icon/tab/v5_8_icon_mine_default.png",
+                "selectedIconPath": "images/icon/tab/v5_8_icon_mine_selected.png",
                 "text": "我的"
             }
         ]
