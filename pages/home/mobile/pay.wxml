@@ -1,2 +1,53 @@
-<!--pages/home/mobile/pay.wxml-->
-<text>pages/home/mobile/pay.wxml</text>
+<scroll-view class=".container">
+  <image class="mobilepay-image" src="/images/mobilepay_ad.png"></image>
+  <view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">话费充值</view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">流量充值</view>
+  </view>
+  <swiper style="height:1100rpx;" current="{{currentTab}}">
+    <swiper-item>
+      <view class="main-container">
+        <view class="mobile-container">
+          <text class="mobile-text">充值号码</text>
+          <input class="mobile" type="number" maxlength="11" placeholder="请输入充值手机号" value="{{mobile}}" bindinput="onChangeInput" />
+        </view>
+        <text class="mobile-location">{{mobileLocation}}</text>
+        <view class="price-container">
+          <block wx:for="{{phoneFees}}" wx:key="">
+            <view bindtap="selectPhoneFee" data-fee="{{item.price}}" class="price-item {{item.selected?'price-active':''}}">
+              <text class="price-title">{{item.title}}</text>
+              <text class="price">售价：{{item.price}}元</text>
+            </view>
+          </block>
+        </view>
+        <text class="mobile-location">
+          可用余额：<text style="color:red;">{{phoneFee}}</text>元</text>
+        <view class="submit-btn">
+          <text class="submit-text">立即充值</text>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="main-container">
+        <view class="mobile-container">
+          <text class="mobile-text">充值号码</text>
+          <input class="mobile" type="number" maxlength="11" placeholder="请输入充值手机号" value="{{mobile}}" bindinput="onChangeInput" />
+        </view>
+        <text class="mobile-location">{{mobileLocation}}</text>
+        <view class="price-container">
+          <block wx:for="{{webFees}}" wx:key="">
+            <view bindtap="selectWebFee" data-fee="{{item.price}}" class="price-item {{item.selected?'price-active':''}}">
+              <text class="price-title">{{item.title}}</text>
+              <text class="price">售价：{{item.price}}元</text>
+            </view>
+          </block>
+        </view>
+        <text class="mobile-location">
+          可用余额：<text style="color:red;">{{webFee}}</text>元</text>
+        <view class="submit-btn">
+          <text class="submit-text">立即充值</text>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</scroll-view>
