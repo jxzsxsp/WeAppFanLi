@@ -53,6 +53,7 @@
   padding-left: 50rpx;
   padding-right: 50rpx;
   color: #a6a6a6;
+  width: 200rpx;
 }
 
 .mobile-location {
