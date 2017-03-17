@@ -21,7 +21,7 @@
           </block>
         </view>
         <text class="mobile-location">
-          可用余额：<text style="color:red;">{{phoneFee}}</text>元</text>
+          应付金额：<text style="color:red;">{{phoneFee}}</text>元</text>
         <view class="submit-btn">
           <text class="submit-text">立即充值</text>
         </view>
@@ -43,7 +43,7 @@
           </block>
         </view>
         <text class="mobile-location">
-          可用余额：<text style="color:red;">{{webFee}}</text>元</text>
+          应付金额：<text style="color:red;">{{webFee}}</text>元</text>
         <view class="submit-btn">
           <text class="submit-text">立即充值</text>
         </view>
